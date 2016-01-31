@@ -2,6 +2,7 @@
 Dark Red: #700d0a
 Gray: #403837
 Cream: #fae0d5
+#ece5d5
 
 */
 
@@ -9,16 +10,15 @@ Cream: #fae0d5
 body {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	font-size: 16px;
-	color: #403837;
+	color: #ece5d5;
 	background: url('../img/tile2.jpg') 50% 0;
 	background-size: cover;
-	margin-top: 40px;
+	margin-top: 10px;
 	min-height: 850px;
 	position: relative;
 	display: inline-block;
 	width: 100%;
    padding: 40px 0;
-   color: #403837;
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizelegibility;
 }
@@ -48,19 +48,20 @@ img {
 }
 
 .content{
-	background: #f7ebe6;
+	background: #403837;
 	padding: 45px 90px;
 	margin-bottom: 45px;
+	margin-top: 45px;
 }
 
 /* ==== NAVBAR ==== */
 .navbar-inverse {
 	background: #700d0a;
-	color: #f7ebe6;
+	color: #ece5d5;
 }
 
 .nav.navbar-nav.navbar-right li a {
-	color: #f7ebe6;
+	color: #ece5d5;
 }
 
 .nav.navbar-nav.navbar-right li a:hover {
@@ -69,31 +70,97 @@ img {
 
 /* ==== HERO ==== */
 
-.hero-text{
-	margin-top: 130px;
-}
-
-#hero h1 {
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
-}
-
-#hero h2 {
-	font-size: 2em;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
-}
-
 /* ==== LAYOUT ==== */
 footer {
 	background: #700d0a;
-	color: white;
+	color: #ece5d5;
 	padding: 5px 0;
 }
 
 footer p {
 	padding: 5px 0;
 }
+
+/* ==== Blog ==== */
+.feature-image {
+	display: table;
+	width: 100%;
+	padding-bottom: 5%;
+	margin-bottom: 30px;
+}
+
+.feature-image-default {
+	background: url('../img/map.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image-default-alt {
+	background: url('../img/diary.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image h1 {
+	padding-top: 75px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 5em;
+	color: #403837;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ece5d5;
+}
+
+.post, .widget, #comments {
+	position: relative;
+	border: solid 1px #ddd;
+	background: #ece5d5;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #403837;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
+	padding: 20px;
+}
+
+.post header h3 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #403837;
+	color: #700d0a;
+}
+
+.post header h1 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #403837;
+	font-size: 24px;
+	color: #700d0a;
+}
+
+.post-image {
+	height: auto;
+}
+
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+
+.post-details i.fa {
+	padding-left: 10px;
+}
+
+.post-details i.fa:first-child {
+	padding: 0;
+}
+
+
 /* ==== THE DREAM DIARIES ==== */
 .tdd-text{
 	margin-top: 130px;
@@ -111,7 +178,7 @@ footer p {
 
 @media screen and (max-width : 768px) {
 	.content{
-		background: #f7ebe6;
+		background: #ece5d5;
 		padding: 20px 40px;
 		margin-bottom: 45px;
 	}
