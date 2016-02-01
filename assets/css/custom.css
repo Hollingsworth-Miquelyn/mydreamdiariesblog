@@ -1,8 +1,8 @@
 /* COLOR REFERENCES
 Dark Red: #700d0a
 Gray: #403837
-Cream: #fae0d5
-#ece5d5
+Cream: #ece5d5
+
 
 */
 
@@ -10,8 +10,8 @@ Cream: #fae0d5
 body {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	font-size: 16px;
-	color: #ece5d5;
-	background: url('../img/tile2.jpg') 50% 0;
+	color: #40383;
+	background: #403837;
 	background-size: cover;
 	margin-top: 10px;
 	min-height: 850px;
@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-size: 4em;
+	color: #700d0a;
 }
 
 h2 {
@@ -47,11 +48,18 @@ img {
 	max-width: 100%;
 }
 
+a {
+	color: #700d0a;
+}
+
+a:hover {
+	color: black;
+}
+
 .content{
-	background: #403837;
+	background: #ece5d5;
 	padding: 45px 90px;
-	margin-bottom: 45px;
-	margin-top: 45px;
+	margin: 45px 45px;
 }
 
 /* ==== NAVBAR ==== */
@@ -68,9 +76,7 @@ img {
 	color: black;
 }
 
-/* ==== HERO ==== */
-
-/* ==== LAYOUT ==== */
+/* ==== Footer ==== */
 footer {
 	background: #700d0a;
 	color: #ece5d5;
@@ -79,6 +85,10 @@ footer {
 
 footer p {
 	padding: 5px 0;
+}
+
+footer a {
+	color: #ece5d5;
 }
 
 /* ==== Blog ==== */
@@ -105,14 +115,14 @@ footer p {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 5em;
-	color: #403837;
+	color: #700d0a;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #ece5d5;
 }
 
 .post, .widget, #comments {
 	position: relative;
-	border: solid 1px #ddd;
+	border: solid 1px #d1c3c1;
 	background: #ece5d5;
 	margin: 0 0 40px;
 	-webkit-border-radius: 4px;
@@ -143,10 +153,6 @@ footer p {
 	color: #700d0a;
 }
 
-.post-image {
-	height: auto;
-}
-
 .post-details {
 	font-size: 12px;
 	width: 90%;
@@ -160,27 +166,151 @@ footer p {
 	padding: 0;
 }
 
+/* === WIDGETS === */
 
-/* ==== THE DREAM DIARIES ==== */
-.tdd-text{
-	margin-top: 130px;
+.widget {
+	padding: 20px;
+}
+
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #d1c3c1;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li {
+	margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+	position: relative;
+	left: 1px;
+}
+
+/* ==== COMMENTS ====c */
+.post-comments-badge {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background: #403837;
+	text-align: center;
+	display: table;
+}
+
+.post-comments-badge a {
+	display: table-cell;
+	vertical-align: middle;
+	color: #ece5d5;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+	background-color: #796a68;
+}
+
+#comments h3 {
+	text-align: center;
+}
+
+#comments h4 {
+	font-size: 1.3em;
+}
+
+#comments ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#comments ol li {
+	background: rgba(0,0,0,0.02);
+	padding: 10px 20px;
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px rgba(0,0,0,0.03);
+}
+
+#comments ol li ol.children {
+	padding: 0;
+	list-style: none;
+	font-size: 0.96em;
+}
+
+#leave-comment {
+	margin: 40px 0 0;
+	padding: 20px 0 0;
+	border-top: solid 1px #eee;
+}
+
+
+/* ==== ABOUT ==== */
+#about img {
+	margin-top: 18px;
 }
 
 /* ==== CONTACT ==== */
-
+.contactme {
+	padding-bottom: 30px;
+}
 /* ==== FORMS ==== */
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+	display: block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
 
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width : 991px) {
-
-}
-
-@media screen and (max-width : 768px) {
 	.content{
 		background: #ece5d5;
 		padding: 20px 40px;
-		margin-bottom: 45px;
+		margin: 40px 10px;
 	}
+}
+
+@media screen and (max-width : 768px) {
+
+}
 
 @media screen and (max-width : 568px) {
